@@ -1,4 +1,6 @@
-<h1 align="center">Wheat World</h1>
+<p align="center">
+  <img src="assets/banner.gif" alt="Wheat World" />
+</p>
 
 <p align="center">
   <em>A multiplayer farming protocol on Base. Stake land. Grow yield. Trade everything.</em>
