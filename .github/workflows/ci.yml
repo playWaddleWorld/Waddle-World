@@ -6,40 +6,45 @@ on:
   pull_request:
     branches: [master]
 
-env:
-  FOUNDRY_PROFILE: ci
-
 jobs:
-  forge:
-    name: Foundry — build & test
+  anchor:
+    name: Anchor — build & test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
         with:
-          submodules: recursive
+          components: rustfmt, clippy
 
-      - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1
+      - name: Install Solana
+        run: |
+          sh -c "$(curl -sSfL https://release.solana.com/v1.18.0/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+
+      - name: Install Anchor
+        run: |
+          cargo install --git https://github.com/coral-xyz/anchor avm --locked
+          avm install 0.30.1
+          avm use   0.30.1
+
+      - name: Install Node
+        uses: actions/setup-node@v4
         with:
-          version: stable
+          node-version: 20
 
-      - name: Print Forge version
-        run: forge --version
+      - name: Install JS deps
+        run: yarn install --frozen-lockfile || true
 
-      - name: Forge build
-        run: forge build --sizes
+      - name: Cargo fmt --check
+        run: cargo fmt --all --check
 
-      - name: Forge fmt --check
-        run: forge fmt --check
+      - name: Cargo clippy
+        run: cargo clippy --all-targets -- -D warnings
 
-      - name: Forge test
-        run: forge test -vvv
+      - name: Anchor build
+        run: anchor build
 
-      - name: Forge coverage
-        run: forge coverage --report lcov
-
-      - name: Upload coverage
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage
-          path: lcov.info
+      - name: Anchor test
+        run: anchor test

@@ -10,7 +10,7 @@
 
 ## Reporting a Vulnerability
 
-If you've found a vulnerability in the Wheat World protocol, **do not open a public issue**. We'd rather hear about it first.
+If you've found a vulnerability in the Wheat.game program, **do not open a public issue**. We'd rather hear about it first.
 
 - Email: `security@thewheat.world`
 - PGP key: published in this repository under `security/pgp.asc` (coming with the audit release).
@@ -18,7 +18,7 @@ If you've found a vulnerability in the Wheat World protocol, **do not open a pub
 Please include:
 
 1. A clear description of the issue and its impact.
-2. A minimal reproduction — Foundry test, transaction trace, or step-by-step.
+2. A minimal reproduction — Anchor test, transaction signature, or step-by-step.
 3. Your name or handle if you'd like credit in the disclosure.
 
 We will acknowledge receipt within **48 hours** and respond with a triage plan within **5 business days**.
@@ -27,8 +27,7 @@ We will acknowledge receipt within **48 hours** and respond with a triage plan w
 
 In-scope:
 
-- `contracts/WheatWorld.sol` and any contracts deployed at addresses listed in `deployments/`.
-- The deployment script `script/Deploy.s.sol`.
+- `programs/wheatgame/src/` and any program ID listed in `Anchor.toml`.
 
 Out of scope:
 
@@ -46,6 +45,6 @@ We follow coordinated disclosure. Once a vulnerability is reported, we will:
 4. Deploy the patch.
 5. Publish a post-mortem within 30 days of resolution.
 
-Responsible reporters are eligible for bounties from the Wheat World treasury under our forthcoming bug bounty program. The amount scales with severity and quality of the report.
+Responsible reporters are eligible for bounties from the Wheat.game treasury under our forthcoming bug bounty program. The amount scales with severity and quality of the report.
 
 Thank you for keeping the protocol — and its players — safe.

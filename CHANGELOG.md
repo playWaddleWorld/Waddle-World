@@ -1,34 +1,29 @@
 # Changelog
 
-All notable changes to the Wheat World protocol contracts are documented here.
+All notable changes to the Wheat.game protocol contracts are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 ### Added
-- Foundry test suite with 14 cases covering claim/abandon/upgrade/exchange/tribes/yield math.
-- Foundry deploy script for Base mainnet and Base Sepolia (Circle native USDC).
-- GitHub Actions CI: build, fmt-check, test, coverage.
+- TypeScript test suite under `tests/` covering claim/abandon/upgrade/exchange/tribes/yield math.
+- GitHub Actions CI: `anchor build`, `cargo fmt --check`, `anchor test`.
 - `SECURITY.md` — vulnerability disclosure policy.
 - `CONTRIBUTING.md` — contributor guidelines.
-
-### Changed
-- Brand: Cropland → Wheat World across the README and contracts.
-- Chain: Solana / Anchor program rewritten as Base / Solidity (`contracts/WheatWorld.sol`).
 
 ## [0.1.0] — 2026-05-04
 
 ### Added
-- Initial protocol contract with `Plot`, `PlotOffer`, `Order`, `Tribe`, `Alliance` accounts.
-- `claimPlot`, `abandonPlot`, `upgradePlot` — staking lifecycle with USDC vault.
-- `listPlot`, `acceptPlotOffer`, `cancelPlotOffer` — P2P plot exchange with optimistic concurrency.
-- `placeOrder`, `_matchBook` — continuous order book for crops, 2.5% protocol fee, self-match guard.
-- `createTribe`, `joinTribe`, `createAlliance`, `joinAlliance` — social systems with member caps.
-- `harvest` and `computeYield` — multiplicative yield engine (tier × upgrade × tribe × alliance × Golden Hour).
-- `isGoldenHour` — deterministic 6-hour cycle, 1-hour window, no oracle.
-- 5-plot-per-wallet cap, enforced at contract level.
+- Initial Anchor program with `Plot`, `PlotOffer`, `Order`, `Tribe`, `Alliance` accounts (all PDAs).
+- `claim_plot`, `abandon_plot`, `upgrade_plot` — staking lifecycle with USDC vault.
+- `list_plot`, `accept_plot_offer` — P2P plot exchange with optimistic concurrency.
+- `place_order`, `match_book` — continuous order book for crops, 2.5% protocol fee, self-match guard.
+- `create_tribe`, `join_tribe`, `create_alliance`, `join_alliance` — social systems with member caps.
+- `harvest` and `compute_yield` — multiplicative yield engine (tier × upgrade × tribe × alliance × Golden Hour).
+- `is_golden_hour` — deterministic 6-hour cycle, 1-hour window, no oracle.
+- 5-plot-per-wallet cap, enforced at program level.
 - Abandon mechanics: 50% burn, 50% to protocol treasury.
 
-[Unreleased]: https://github.com/alexinbinary/WheatWorld/compare/v0.1.0...HEAD
-[0.1.0]:      https://github.com/alexinbinary/WheatWorld/releases/tag/v0.1.0
+[Unreleased]: https://github.com/leeoxiang/wheat-game/compare/v0.1.0...HEAD
+[0.1.0]:      https://github.com/leeoxiang/wheat-game/releases/tag/v0.1.0
