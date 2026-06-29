@@ -57,4 +57,4 @@ If you've found a vulnerability, please follow [SECURITY.md](./SECURITY.md) and 
 
 ---
 
-Questions? Reach us at [@TheWheatWorld](https://x.com/TheWheatWorld) on X.
+Questions? Reach us at [@playCroptopia](https://x.com/playCroptopia) on X.
