@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="https://croptopia.world"><img alt="Site" src="https://img.shields.io/badge/site-croptopia.world-1a8917?style=for-the-badge"></a>
+  <a href="https://pump.fun/coin/AGbgyS4vCywXzpdRUNhXceA2dqa2Te8YXM9VN1teCrop"><img alt="$CROP" src="https://img.shields.io/badge/%24CROP-Live-9945FF?logo=solana&logoColor=white&style=for-the-badge"></a>
   <a href="https://github.com/playCroptopia/Croptopia"><img alt="GitHub" src="https://img.shields.io/badge/source-playCroptopia%2FCroptopia-181717?logo=github&style=for-the-badge"></a>
   <a href="https://x.com/playCroptopia"><img alt="Twitter" src="https://img.shields.io/badge/follow-%40playCroptopia-000000?logo=x&style=for-the-badge"></a>
   <a href="https://medium.com/@Croptopia"><img alt="Medium" src="https://img.shields.io/badge/medium-%40Croptopia-12100E?logo=medium&style=for-the-badge"></a>
@@ -321,6 +322,22 @@ pub fn is_golden_hour(now: i64) -> bool {
 ```
 
 Every six hours, for one hour, every harvest in the world gets +20%. There's no cron, no oracle, no off-chain scheduler — it's a pure function of the program clock. Tribe leaders organize harvest rallies around it. The order book sees a volume spike. Good farmers schedule themselves.
+
+---
+
+## $CROP Token
+
+The protocol's community token is **$CROP**, live on Solana via [Pump.fun](https://pump.fun/coin/AGbgyS4vCywXzpdRUNhXceA2dqa2Te8YXM9VN1teCrop).
+
+**Contract address:**
+
+```
+AGbgyS4vCywXzpdRUNhXceA2dqa2Te8YXM9VN1teCrop
+```
+
+$CROP holders get priority access to upcoming drops — including the **free Farmer NFT mint window**.
+
+> Croptopia's in-game stakes, trades, and fees are denominated in USDC. $CROP is the community ticker — a coordination token, not the unit of account.
 
 ---
 
