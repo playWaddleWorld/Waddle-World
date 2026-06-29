@@ -12,7 +12,7 @@
 
 If you've found a vulnerability in the Croptopia program, **do not open a public issue**. We'd rather hear about it first.
 
-- Email: `security@thewheat.world`
+- Email: `security@croptopia.world`
 - PGP key: published in this repository under `security/pgp.asc` (coming with the audit release).
 
 Please include:

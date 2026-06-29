@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <a href="https://thewheat.world"><img alt="Site" src="https://img.shields.io/badge/site-thewheat.world-1a8917?style=for-the-badge"></a>
+  <a href="https://croptopia.world"><img alt="Site" src="https://img.shields.io/badge/site-croptopia.world-1a8917?style=for-the-badge"></a>
   <a href="https://github.com/leeoxiang/wheat-game"><img alt="GitHub" src="https://img.shields.io/badge/source-leeoxiang%2Fwheat--game-181717?logo=github&style=for-the-badge"></a>
   <a href="https://x.com/playCroptopia"><img alt="Twitter" src="https://img.shields.io/badge/follow-%40playCroptopia-000000?logo=x&style=for-the-badge"></a>
-  <a href="https://medium.com/@WheatWorld"><img alt="Medium" src="https://img.shields.io/badge/medium-%40WheatWorld-12100E?logo=medium&style=for-the-badge"></a>
+  <a href="https://medium.com/@Croptopia"><img alt="Medium" src="https://img.shields.io/badge/medium-%40Croptopia-12100E?logo=medium&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@ That single design choice is what separates Croptopia from a farming game. The c
 
 > **Land you don't believe in, you don't claim. Land you do, you defend.**
 
-Play now at **[thewheat.world](https://thewheat.world)** · Follow updates on **[@playCroptopia](https://x.com/playCroptopia)** · Read more on **[Medium](https://medium.com/@WheatWorld)**.
+Play now at **[croptopia.world](https://croptopia.world)** · Follow updates on **[@playCroptopia](https://x.com/playCroptopia)** · Read more on **[Medium](https://medium.com/@Croptopia)**.
 
 ---
 
@@ -387,9 +387,9 @@ Independent review is in progress. Findings will be published in this repository
 
 ## Links
 
-- **Site** — [thewheat.world](https://thewheat.world)
+- **Site** — [croptopia.world](https://croptopia.world)
 - **Twitter / X** — [@playCroptopia](https://x.com/playCroptopia)
-- **Medium** — [@WheatWorld](https://medium.com/@WheatWorld)
+- **Medium** — [@Croptopia](https://medium.com/@Croptopia)
 - **Source** — you're reading it
 
 ---
